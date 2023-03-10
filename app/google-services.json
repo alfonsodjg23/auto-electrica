@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "345620859163",
+    "project_id": "rodeza-e25ae",
+    "storage_bucket": "rodeza-e25ae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:345620859163:android:f42d44d29ee37a47762bbe",
+        "android_client_info": {
+          "package_name": "itsz.rodeza"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "345620859163-mhumbh3jjkp04hmf2h3up7jcrmvnran5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDol-tMMcR8pcRDxVIHEEmbuEAqKfkAjRQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "345620859163-mhumbh3jjkp04hmf2h3up7jcrmvnran5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

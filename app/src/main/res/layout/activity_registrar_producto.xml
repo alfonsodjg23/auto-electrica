@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bar"
+    tools:context=".RegistrarProducto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="50dp">
+
+                <EditText
+                    android:id="@+id/edtSku"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/bar"
+                    android:ems="10"
+                    android:hint="Ingrese sku"
+                    android:layout_marginStart="15dp"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/bar"
+                    android:textColorHint="@color/bar" />
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardElevation="50dp">
+
+
+                <EditText
+                    android:id="@+id/edtDescripcion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:backgroundTint="@color/white"
+                    android:ems="10"
+                    android:hint="descripcion del prooducto"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white" />
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvPCompra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="50dp">
+
+
+                <EditText
+                    android:id="@+id/edtPCompra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/bar"
+                    android:ems="10"
+                    android:layout_marginStart="15dp"
+                    android:hint="precio compra"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/bar"
+                    android:textColorHint="@color/bar" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvPMayoreo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardElevation="50dp">
+
+
+                <EditText
+                    android:id="@+id/edtPMayoreo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:ems="10"
+                    android:hint="precio mayoreo"
+                    android:layout_marginStart="15dp"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvPPublico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardElevation="50dp">
+
+
+                <EditText
+                    android:id="@+id/edtPPublico"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/bar"
+                    android:ems="10"
+                    android:hint="precio publico"
+                    android:layout_marginStart="15dp"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/bar"
+                    android:textColorHint="@color/bar" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvExistencia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardElevation="50dp">
+
+
+                <EditText
+                    android:id="@+id/edtExistencia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:ems="10"
+                    android:hint="existencia"
+                    android:layout_marginStart="15dp"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvPPCaja"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardElevation="50dp">
+
+
+                <EditText
+                    android:id="@+id/edtPXCaja"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/bar"
+                    android:ems="10"
+                    android:hint="pieza por caja"
+                    android:layout_marginStart="15dp"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/bar"
+                    android:textColorHint="@color/bar" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvUXMayoreo1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardElevation="50dp">
+
+
+                <EditText
+                    android:id="@+id/edtUXMayore1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:ems="10"
+                    android:hint="ux mayoreo1"
+                    android:layout_marginStart="15dp"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvUXMayoreo2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardElevation="50dp">
+
+
+                <EditText
+                    android:id="@+id/edtUXMayore2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/bar"
+                    android:ems="10"
+                    android:layout_marginStart="15dp"
+                    android:hint="ux mayoreo2"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/bar"
+                    android:textColorHint="@color/bar" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvUXMayoreo3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardElevation="50dp">
+
+
+                <EditText
+                    android:id="@+id/edtUXMayore3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:ems="10"
+                    android:hint="ux mayoreo3"
+                    android:layout_marginStart="15dp"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvUltimaCompra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardElevation="50dp">
+
+
+                <EditText
+                    android:id="@+id/edtUltimaCompra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/bar"
+                    android:ems="10"
+                    android:hint="ultima compra"
+                    android:layout_marginStart="15dp"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/bar"
+                    android:textColorHint="@color/bar" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvDepartamento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardElevation="50dp">
+
+
+                <EditText
+                    android:id="@+id/edtDepartamento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:ems="10"
+                    android:hint="departamento"
+                    android:layout_marginStart="15dp"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvEstado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardElevation="50dp">
+
+
+                <EditText
+                    android:id="@+id/edtEstado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/bar"
+                    android:ems="10"
+                    android:hint="estado"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/bar"
+                    android:layout_marginStart="15dp"
+                    android:textColorHint="@color/bar" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvUtilidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardElevation="50dp">
+
+
+                <EditText
+                    android:id="@+id/edtUtilidad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:ems="10"
+                    android:hint="utilidad"
+                    android:layout_marginStart="15dp"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvTipoProducto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardElevation="50dp">
+
+
+                <EditText
+                    android:id="@+id/edtTipoProducto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/bar"
+                    android:ems="10"
+                    android:hint="tipo de producto"
+                    android:layout_marginStart="15dp"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/bar"
+                    android:textColorHint="@color/bar" />
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btnAgregar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                style="@style/Widget.Material3.Button"
+                android:backgroundTint="#FFFF00"
+                android:textColor="@color/bar"
+                android:textSize="20sp"
+                android:text="Registrar" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
