@@ -101,7 +101,7 @@ public class FragmentMenu extends Fragment {
                 dialog.setMessage("Esta empresa se dedica a comercializar productos y refacciones para automoviles\n" +
                                 "para mayor informacion puede comunicarse a los numeros:\n" +
                                 "\n" +
-                                "22322123\n" +
+                                "2232212312\n" +
                                 "6252416173").setCancelable(false)
                                 .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                                     @Override
@@ -118,8 +118,9 @@ public class FragmentMenu extends Fragment {
         root.findViewById(R.id.btnUbicacion).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) { //Aqui se ingresa la url de la ubicacion de la empresa
-                Intent intent=new Intent(Intent.ACTION_VIEW,Uri.parse("https://www.google.com.mx/maps/place/Auto+El%C3%A9ctrica+Rodeza/@18.8398204,-97.1221414,17z/data=!4m12!1m6!3m5!1s0x85c50314eb630355:0x32ff3a56d44a8fce!2sAuto+El%C3%A9ctrica+Rodeza!8m2!3d18.8398263!4d-97.1199529!3m4!1s0x85c50314eb630355:0x32ff3a56d44a8fce!8m2!3d18.8398263!4d-97.1199529"));
-                startActivity(intent);
+                /*Intent intent=new Intent(Intent.ACTION_VIEW,Uri.parse("https://www.google.com.mx/maps/place/Auto+El%C3%A9ctrica+Rodeza/@18.8398204,-97.1221414,17z/data=!4m12!1m6!3m5!1s0x85c50314eb630355:0x32ff3a56d44a8fce!2sAuto+El%C3%A9ctrica+Rodeza!8m2!3d18.8398263!4d-97.1199529!3m4!1s0x85c50314eb630355:0x32ff3a56d44a8fce!8m2!3d18.8398263!4d-97.1199529"));
+                startActivity(intent);*/
+                AlertDialog();
             }
         });
         //Metodo de boton acerca de
@@ -127,7 +128,7 @@ public class FragmentMenu extends Fragment {
             @Override
             public void onClick(View view) {
                 AlertDialog.Builder dialog = new AlertDialog.Builder(getContext());
-                dialog.setMessage("Aplicacion creada por TECNM itsz \n" +
+                dialog.setMessage("Aplicacion creada por Alfonso de Jesus \n" +
                         "©Todos los derechos reservados").setCancelable(false).setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
@@ -143,6 +144,21 @@ public class FragmentMenu extends Fragment {
 
 
         return root;
+    }
+    private void AlertDialog(){
+        AlertDialog.Builder builder=new AlertDialog.Builder(getContext());
+        builder.setMessage("Ubicacion no mostrada por suguridad de la empresa a la que se le creo esta aplicacion")
+                .setCancelable(false)
+                .setNeutralButton("Ok", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                    }
+                });
+
+        AlertDialog alertDialog=builder.create();
+        alertDialog.setTitle("Atencion");
+        alertDialog.show();
     }
 
 }

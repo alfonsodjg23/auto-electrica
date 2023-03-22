@@ -340,14 +340,13 @@
                     android:textColorHint="@color/bar" />
             </androidx.cardview.widget.CardView>
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btnAgregar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="20dp"
-                style="@style/Widget.Material3.Button"
-                android:backgroundTint="#FFFF00"
+                android:background="@drawable/button_yellow"
                 android:textColor="@color/bar"
                 android:textSize="20sp"
                 android:text="Registrar" />

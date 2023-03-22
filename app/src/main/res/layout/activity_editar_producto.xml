@@ -56,7 +56,7 @@
                     android:textColorHint="@color/bar" />
 
             </androidx.cardview.widget.CardView>
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Buscar"
@@ -65,8 +65,7 @@
                     android:textStyle="bold"
                     android:layout_marginTop="7dp"
                     android:layout_marginStart="20dp"
-                    style="@style/Widget.Material3.Button"
-                    android:backgroundTint="#FFFF00"
+                    android:background="@drawable/button_yellow"
                     />
         </LinearLayout>
 
@@ -368,14 +367,13 @@
                     android:textColorHint="@color/bar" />
             </androidx.cardview.widget.CardView>
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btnAgregar"
-                style="@style/Widget.Material3.Button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="20dp"
-                android:backgroundTint="#FFFF00"
+                android:background="@drawable/button_yellow"
                 android:text="Actualizar producto"
                 android:textColor="@color/bar"
                 android:textSize="20sp"
