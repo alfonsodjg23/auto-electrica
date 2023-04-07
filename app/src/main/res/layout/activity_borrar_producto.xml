@@ -7,6 +7,10 @@
     android:background="@color/bar"
     tools:context=".BorrarProducto">
 
+
+
+
+
   <LinearLayout
       android:layout_width="match_parent"
       android:layout_height="match_parent"
